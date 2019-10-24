@@ -2,7 +2,7 @@ const questions = [
   { question: "Podaj swoje imię" },
   { question: "Podaj swoje nazwisko" },
   { question: "Podaj adres email", pattern: /\S+@\S+\.\S+/ },
-  { question: "Stwórz hasło", type: "password" }
+  { question: "Utwórz hasło", type: "password" }
 ];
 
 const shakeTime = 100;
@@ -106,7 +106,7 @@ function formComplete() {
   const h1 = document.createElement("h1");
   h1.classList.add("end");
   h1.appendChild(
-    document.createTextNode(`Dziękujemy ${questions[0].answer} Rejestracja zakończona pomyślnie!`)
+    document.createTextNode(`Dziękujemy ${questions[0].answer}. Rejestracja zakończona pomyślnie!`)
   );
   setTimeout(() => {
     formBox.parentElement.appendChild(h1);
