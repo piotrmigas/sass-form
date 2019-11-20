@@ -1,6 +1,6 @@
 const questions = [
-  { question: "Podaj swoje imię" },
-  { question: "Podaj swoje nazwisko" },
+  { question: "Podaj imię" },
+  { question: "Podaj nazwisko" },
   { question: "Podaj adres email", pattern: /\S+@\S+\.\S+/ },
   { question: "Utwórz hasło", type: "password" }
 ];
